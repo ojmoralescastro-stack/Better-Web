@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Better Web | Websites, Chatbots and Digital Experiences</title>
+  <meta name="description" content="Better Web creates clean, professional websites and modern chatbots that strengthen your online presence.">
+  <meta name="theme-color" content="#000000">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Better Web">
+  <meta property="og:description" content="Clean websites, modern chatbots and better digital experiences.">
+  <!-- Replace YOUR-DOMAIN.example with your real domain after deployment -->
+  <meta property="og:url" content="https://YOUR-DOMAIN.example/">
+  <meta property="og:image" content="https://YOUR-DOMAIN.example/assets/images/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
+  <link rel="preload" as="image" href="assets/images/logo.png">
+  <link rel="stylesheet" href="css/main.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body data-view="intro">
+  <h1 class="sr-only">Better Web</h1>
+
+  <!-- Intro + radial menu -->
+  <main class="stage" id="stage">
+    <div class="radial-wrap" id="radial-wrap">
+      <nav class="radial" id="radial" aria-label="Main sections">
+        <ul>
+          <li data-angle="-90"><span class="ray" aria-hidden="true"></span><button type="button" data-target="contact">Contact Us</button></li>
+          <li data-angle="-18"><span class="ray" aria-hidden="true"></span><button type="button" data-target="chat">Chat</button></li>
+          <li data-angle="54"><span class="ray" aria-hidden="true"></span><button type="button" data-target="about">About Us</button></li>
+          <li data-angle="126"><span class="ray" aria-hidden="true"></span><button type="button" data-target="chatbot">Chatbot Creation</button></li>
+          <li data-angle="198"><span class="ray" aria-hidden="true"></span><button type="button" data-target="website">Website Creation</button></li>
+        </ul>
+      </nav>
+      <button type="button" class="logo-btn" id="logo-button" aria-expanded="false" aria-label="Better Web logo. Activate to show the main sections.">
+        <img class="logo-glow" src="assets/images/logo.png" alt="" width="1487" height="812" aria-hidden="true" fetchpriority="high">
+        <img class="logo-main" src="assets/images/logo.png" alt="" width="1487" height="812" fetchpriority="high">
+      </button>
+    </div>
+    <p class="hint" id="hint" aria-hidden="true">Click the logo</p>
+  </main>
+
+  <!-- Section controls -->
+  <header class="topbar" id="topbar">
+    <button type="button" class="icon-btn" id="back-button" aria-label="Back to main menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+    </button>
+    <div class="quick">
+      <button type="button" class="icon-btn" id="menu-button" aria-label="Open section menu" aria-expanded="false" aria-controls="quick-menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+      </button>
+      <ul class="quick-menu" id="quick-menu" hidden>
+        <li><button type="button" data-target="contact">Contact Us</button></li>
+        <li><button type="button" data-target="chat">Chat</button></li>
+        <li><button type="button" data-target="website">Website Creation</button></li>
+        <li><button type="button" data-target="chatbot">Chatbot Creation</button></li>
+        <li><button type="button" data-target="about">About Us</button></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- CONTACT -->
+  <section class="panel" id="contact" aria-labelledby="contact-title" inert>
+    <div class="panel-inner center">
+      <h2 id="contact-title" tabindex="-1">Contact Us</h2>
+      <p class="lead">Have a project in mind? Reach out to Better Web for more information about websites, chatbots and digital services.</p>
+      <div class="contact-actions" data-contact-actions></div>
+    </div>
+  </section>
+
+  <!-- CHAT -->
+  <section class="panel panel-chat" id="chat" aria-labelledby="chat-title" inert>
+    <div class="panel-inner">
+      <h2 id="chat-title" tabindex="-1">Chat</h2>
+      <div class="chat">
+        <div class="chat-head">
+          <span class="chat-mark" aria-hidden="true"></span>
+          <span>Better Web Assistant</span>
+          <button type="button" class="chat-restart" id="chat-restart">Restart</button>
+        </div>
+        <div class="chat-log" id="chat-log" role="log" aria-live="polite" aria-label="Conversation"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WEBSITE CREATION -->
+  <section class="panel" id="website" aria-labelledby="website-title" inert>
+    <div class="panel-inner split">
+      <div class="copy">
+        <h2 id="website-title" tabindex="-1">Website Creation</h2>
+        <p class="lead">Better Web builds clean, professional websites designed to give your business a strong online presence.</p>
+        <p>Every project is shaped around carefully designed user experiences: clear structure, modern visuals and fast, reliable pages that make a lasting first impression.</p>
+        <ul class="points">
+          <li>Clean, purposeful design</li>
+          <li>Professional websites</li>
+          <li>Modern digital experiences</li>
+          <li>A strong online presence</li>
+        </ul>
+      </div>
+      <div class="showcase" id="showcase">
+        <div class="shots">
+          <img class="shot" data-shot src="assets/images/website-1.png" width="1327" height="521" loading="lazy" alt="Website for Olas y Olivos, a Mediterranean catering company, with a large serif headline beside an olive branch photo.">
+          <img class="shot" data-shot src="assets/images/website-2.png" width="1288" height="590" loading="lazy" alt="Website for Sintli House with large centered lettering on a warm gridded background.">
+        </div>
+        <button type="button" class="icon-btn showcase-next" id="showcase-next" aria-label="Show next website">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHATBOT CREATION -->
+  <section class="panel" id="chatbot" aria-labelledby="chatbot-title" inert>
+    <div class="decor" id="diamonds" aria-hidden="true"></div>
+    <div class="panel-inner center">
+      <h2 id="chatbot-title" tabindex="-1">Chatbot Creation</h2>
+      <p class="lead">Better Web creates useful, modern chatbots that help your business talk to customers at any hour.</p>
+      <ul class="points wide">
+        <li>Interact with customers</li>
+        <li>Automate conversations</li>
+        <li>Collect relevant information</li>
+        <li>Improve communication</li>
+        <li>Create better digital experiences</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="panel panel-about" id="about" aria-labelledby="about-title" inert>
+    <div class="decor" id="stars" aria-hidden="true"></div>
+    <div class="panel-inner about-inner">
+      <h2 id="about-title" tabindex="-1">About Us</h2>
+      <p class="lead big">Better Web helps businesses strengthen their online presence.</p>
+      <ul class="points wide">
+        <li>Professional websites</li>
+        <li>Modern chatbots</li>
+        <li>Digital tools</li>
+        <li>Better online experiences</li>
+      </ul>
+      <img class="about-logo" src="assets/images/logo.png" width="1487" height="812" loading="lazy" alt="Better Web logo">
+    </div>
+  </section>
+
+  <template id="contact-actions-template">
+    <a class="contact-btn" href="mailto:betterwebdotcom@gmail.com" aria-label="Email Better Web with Gmail">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5 12 13l8.5-6.5"/></svg>
+      <span>Gmail</span>
+    </a>
+    <a class="contact-btn" href="https://wa.me/50370276723" target="_blank" rel="noopener noreferrer" aria-label="Open a WhatsApp conversation with Better Web">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2a8.8 8.8 0 0 0-7.6 13.2L3.2 20.8l4.5-1.2A8.8 8.8 0 1 0 12 3.2z"/><path d="M9 8.4c.3 2.6 3 5.3 5.6 5.7l1.2-1.3-2-1-.9.7c-.9-.4-1.9-1.4-2.3-2.3l.7-.9-1-2z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+  </template>
+</body>
+</html>
